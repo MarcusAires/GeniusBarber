@@ -66,9 +66,9 @@ forms.addEventListener("submit", (e) => {
     // Puxa o array com os objetos do localstorage e adiciona mais um objeto depois transforma tudo em json de novo e manda de volta pro localestorage
     // substituir esse bloco por conexão de banco de dados 
     const DB = JSON.parse(localStorage.getItem("DB"))
-    console.log("banco de dados antes do Push" + DB)
+    console.log("banco de dados antes do Push", DB)
     DB.push(novoAgendamento)
-    console.log("Banco de dados após o push" + DB)
+    console.log("Banco de dados após o push", DB)
     localStorage.setItem("DB", JSON.stringify(DB))
 
     //////////\\\\\\\\\\\\//////////\\\\\\\\\\////////\\\\\\
