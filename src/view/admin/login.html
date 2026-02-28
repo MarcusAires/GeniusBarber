@@ -15,9 +15,9 @@
         id="form-login-admin" 
         class="form-admin"
         autocomplete="on"
-        autofocus=""
+        autofocus
         autocorrect="on"
-        aria-label="o que é isso "  
+        aria-label="o que é isso"  
         >
         <h2>Faça o seu login</h2>
             <label for="email">
@@ -55,14 +55,16 @@
 </html>
 
 
-<!-- 📝 Task 1: A Fachada (UI da Tela de Login)
+<!-- 📝 Task 2: O Porteiro (A Lógica de Autenticação Fake)
 
-    Objetivo: Criar um arquivo login.html e estilizá-lo.
+    Objetivo: Criar o login.js para validar quem está entrando.
 
-    Requisitos: * Um formulário simples e centralizado.
+    Requisitos: * Crie variáveis "chumbadas" no topo do seu código (seu Mock de back-end). Ex: defina que o usuário correto é "admin" e a senha é "1234".
 
-        Um input para o "Usuário" ou "E-mail".
+        Capture o clique do botão "Entrar".
 
-        Um input para a "Senha" (lembre-se de pesquisar qual o type correto no HTML para a senha ficar com aquelas "bolinhas" escondidas).
+        Faça um if/else: A senha digitada bate com a chumbada?
 
-        Um botão "Entrar". -->
+        Se sim: Salve um "crachá" no navegador para provar que ele fez login. Dica de ouro: Pesquise sobre o sessionStorage no JavaScript. Ele é primo do localStorage, mas é mais seguro para logins, pois apaga sozinho quando o cara fecha a aba.
+
+        Se não: Limpe os campos e mostre um aviso de "Usuário ou senha inválidos".. -->

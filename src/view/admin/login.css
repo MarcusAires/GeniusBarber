@@ -12,7 +12,7 @@ form {
     padding: 12px;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 380px;
+    max-width: 350px;
     margin: 5em auto;
     border-radius: 16px;
     border-radius: 12px;
@@ -29,15 +29,19 @@ input {
     border-radius: 12px;
     height: 18px;
     margin: 12px;
+    margin-top: 0;
     padding: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 label{
     display: block;
-    margin: 8px;
+    margin-left: 8px;
+    margin-bottom: 0;
+    margin-top: 18px;
 }
 
 #entrar {
+    margin-top: 18px;
     background-color: #333333;
     box-shadow: black;
     color: white;
