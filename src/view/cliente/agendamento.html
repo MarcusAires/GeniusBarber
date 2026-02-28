@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Barber</title>
+    <link rel="stylesheet" href="cliente.css">
+</head>
+
+<body>
+    <section class="top-bar">
+
+        <header>
+            <h1><a href="#">Genius Barber</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Agendamento</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <section class="forms">
+            <form action="" id="forms" autocomplete="on">
+                <h2>Faça seu agendamento</h2>
+                <input type="date" name="Data" id="input-data" required>
+                <input type="text" placeholder="Informe seu nome" id="nome" required maxlength="15">
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\)\s9\d{4}-\d{4}" required>
+                <select name="servicos" id="servicos" class="servicos">
+                    <option value="Corte" selected>Corte</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Corte e Barba">Corte e barba</option>
+                </select>
+                <input type="submit" id="confirmar" class="confirmar" value="Confirmar agendamento">
+            </form>
+        </section>
+    </main>
+    <footer>
+            <p><a href="#">Fale conosco</a></p>
+            <p><a href="#">Projetos</a></p>
+            <p><a href="#">Agendamentos</a></p>
+            <p>App construido por <a href="https://marcusaires.github.io/portifolio/">AiresDev</a></p>
+    </footer>
+
+    <script src="cliente.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+header,
+nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* sessão da barra de navegação*/
+/* sessão da barra de navegação*/
+.top-bar{
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between; /* Joga um pra cada lado */
+    align-items: center; /* Alinha no meio verticalmente */
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+}
+header {
+    background-color: #333333;
+    display: block;
+    color: white;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+nav {
+    display: block;
+    background-color: #333333;
+    font-size: larger;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(65, 61, 61, 0.19);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    justify-content: center;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+/* sessão da barra de navegação*/
+/* sessão da barra de navegação*/
+
+
+
+
+/* sessão do forms e inputs*/
+/* sessão do forms e inputs*/
+/* sessão do forms e inputs*/
+form h2{
+    margin-top: 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr; /* Ocupa 1 fração disponível */
+    max-width: 380px;           /* Largura máxima do form */
+    margin: 5em auto;           /* Centraliza automaticamente na horizontal */
+    /* ... mantenha bordas e sombras aqui */   
+    border-radius: 16px;
+    border-style: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+    margin: 20px;
+}
+
+input {
+    border-radius: 12px;
+    height: 18px;
+    margin: 12px;
+    padding: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(65, 61, 61, 0.19);
+}
+
+select {
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    border-radius: 12px;
+    height: 35px;
+    margin: 12px;
+    padding: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(65, 61, 61, 0.19);
+}
+
+input data {
+    cursor: pointer;
+}
+
+/* #input-data {
+    width: 8em;
+    cursor: pointer;
+}
+ */
+.confirmar {
+    background-color: #333333;
+
+    box-shadow: black;
+    color: white;
+    font-size: larger;
+    height: max-content;
+}
+
+#confirmar:hover {
+    cursor: pointer;
+    scale: calc(1.02);
+    transition: 5ms;
+}
+
+/* sessão do forms e inputs*/
+/* sessão do forms e inputs*/
+/* sessão do forms e inputs*/
+
+
+
+
+
+main {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+main section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(65, 61, 61, 0.19);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanhos iguais */
+    margin-bottom:0;
+    margin-top: 200px;
+    background-color: rgba(93, 90, 97, 0.142);
+    height: auto;
+}
+footer p a {
+    text-decoration: none;
+    display: block;
+    height: auto;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+}
