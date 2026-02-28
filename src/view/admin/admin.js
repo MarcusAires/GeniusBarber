@@ -1,4 +1,24 @@
-const agenda = document.getElementById("agenda")
+const userEmail = sessionStorage.getItem("userEmail")
+const userPassword = sessionStorage.getItem("userPassword")
+
+///mock user\\\/////////////////\\\\\\\\\\\\\/////\\\\\\\\\/
+const emailAdmin = "admin@gmail.com"
+const senhaAdmin = "12345678"
+//////\\\\\\////////////\\\\\\\\/////////\\\\\\\//////////
+
+if(!userEmail || !userPassword){
+    alert("Acesso negado, faça o login antes")
+    window.location.href = "login.html"
+}
+
+
+if(userEmail !== emailAdmin || userPassword !== senhaAdmin){
+    alert("Acesso negado, faça o login antes")
+    window.location.href = "login.html"
+}
+
+
+/* const agenda = document.getElementById("agenda")
 const agendados = JSON.parse(localStorage.getItem("DB"))
 
 
@@ -19,4 +39,4 @@ agendados.forEach(agendado => {
 
 
 //agendados.forEach(agendado => {
-//});
+//}); */
