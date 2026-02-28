@@ -3,23 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de login área admin</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header><h1> Agenda </h1></header>
-    <h3>Agendamentos feitos</h3>
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>Data</th>
-            <th>Fone</th>
-            <th>Serviços</th>
-        </tr>
-        <tbody id="agenda">
-        </tbody>
-    </table>
-    <script src="admin.js">
+    <header>
+        <h1>Painel do barbeiro</h1>
+    </header>
+    <main>
+        <form action="" 
+        id="form-login-admin" 
+        class="form-admin"
+        autocomplete="on"
+        autofocus=""
+        autocorrect="on"
+        aria-label="o que é isso "  
+        >
+        <h2>Faça o seu login</h2>
+            <label for="email">
+                E-mail
+            </label>
+            <input 
+            type="email"
+            id="email"
+            placeholder="Informe o seu e-mail"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2}$" 
+            title="Informe um e-mail valido para seguir"
+            required>
 
+            <label for="senha">
+                Senha
+            </label>
+            <input
+             type="password" 
+             id="pwd" 
+             name="senha"
+             class="senha"
+             placeholder="Informe uma senha"
+             minlength="8"
+             required>
+
+             <input type="submit" id="entrar" class="bt-submit" value="Entrar">
+
+        </form>  
+    </main>
+
+    <script src="login.js">
     </script>
 </body>
 </html>
+
+
+<!-- 📝 Task 1: A Fachada (UI da Tela de Login)
+
+    Objetivo: Criar um arquivo login.html e estilizá-lo.
+
+    Requisitos: * Um formulário simples e centralizado.
+
+        Um input para o "Usuário" ou "E-mail".
+
+        Um input para a "Senha" (lembre-se de pesquisar qual o type correto no HTML para a senha ficar com aquelas "bolinhas" escondidas).
+
+        Um botão "Entrar". -->
