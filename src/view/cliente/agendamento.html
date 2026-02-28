@@ -27,8 +27,21 @@
             <form action="" id="forms" autocomplete="on">
                 <h2>Faça seu agendamento</h2>
                 <input type="date" name="Data" id="input-data" required>
+                <select name="horario" id="horario" class="servicos">
+                    <option value="" disabled selected>Escolha um horário</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                </select>
                 <input type="text" placeholder="Informe seu nome" id="nome" required maxlength="15">
-                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\)\s9\d{4}-\d{4}" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000"  required>
                 <select name="servicos" id="servicos" class="servicos">
                     <option value="Corte" selected>Corte</option>
                     <option value="Barba">Barba</option>
