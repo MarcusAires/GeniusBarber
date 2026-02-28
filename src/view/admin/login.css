@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
-input:invalid {
-    border: red;
+header h1{
+    display: flex;
+    margin: 12px;
+    justify-content: center;
 }
 
 form {
+    padding: 12px;
     display: grid;
     grid-template-columns: 1fr;
     max-width: 380px;
@@ -17,13 +19,22 @@ form {
     border-style: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+form h2{
+    display: flex;
+    justify-content: center;
+}
 input {
+    border: hidden;
+    display: block;
     border-radius: 12px;
     height: 18px;
     margin: 12px;
     padding: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+label{
+    display: block;
+    margin: 8px;
 }
 
 #entrar {
@@ -32,4 +43,12 @@ input {
     color: white;
     font-size: larger;
     height: max-content;
+    border-radius: 8px;
+}
+
+#entrar:hover{
+    background-color: rgb(83, 77, 77);
+    transition: 10ms;
+    cursor: pointer;
+    scale: calc(1.015);
 }
