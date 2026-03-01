@@ -1,21 +1,28 @@
 const userEmail = sessionStorage.getItem("userEmail")
 const userPassword = sessionStorage.getItem("userPassword")
+const btlogout = document.getElementById("btlogout")
 
 ///mock user\\\/////////////////\\\\\\\\\\\\\/////\\\\\\\\\/
 const emailAdmin = "admin@gmail.com"
 const senhaAdmin = "12345678"
 //////\\\\\\////////////\\\\\\\\/////////\\\\\\\//////////
 
+//mock de autenticação
 if(!userEmail || !userPassword){
     alert("Acesso negado, faça o login antes")
     window.location.href = "login.html"
 }
 
-
 if(userEmail !== emailAdmin || userPassword !== senhaAdmin){
     alert("Acesso negado, faça o login antes")
     window.location.href = "login.html"
 }
+
+//funcionalidade de logout
+btlogout.addEventListener("click",()=>{
+    sessionStorage.clear()
+    window.location.href = "login.html"
+})
 
 
 /* const agenda = document.getElementById("agenda")

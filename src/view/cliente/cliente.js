@@ -24,7 +24,7 @@ data.value = hojeFormatado
 // Criação do DB provisório para testes de interface da aba login
 /// substituir esse bloco ou remover para adição do DB real
 if (!localStorage.getItem("DB")) {
-
+    
     const modeloAgendamento =
         [
             {
@@ -35,10 +35,23 @@ if (!localStorage.getItem("DB")) {
                 servicos: "servico1"
             }
         ]
-    localStorage.setItem("DB", JSON.stringify(modeloAgendamento))
-}
-/////////////\\\\\\\\\\\\\////////////\\\\\\\\\\///////\\\\
+        localStorage.setItem("DB", JSON.stringify(modeloAgendamento))
+    }
+    /////////////\\\\\\\\\\\\\////////////\\\\\\\\\\///////\\\\
+    ///validador de horários livres
+    data.addEventListener("input",()=>{
+        const hora = horario.option.value
+        const agendamentos = JSON.parse(localStorage.getItem("DB"))
+        agendamentos.forEach(dia => {
+            if(dia.data === data.value && dia.horario === hora){
+                const ocupados = document.getElementById(option.value)
+                
+            }
+        });
+    })
 
+
+//////////////////////////////////////////////////////////    
 forms.addEventListener("submit", (e) => {
     e.preventDefault()
 
@@ -70,8 +83,8 @@ forms.addEventListener("submit", (e) => {
     DB.push(novoAgendamento)
     console.log("Banco de dados após o push", DB)
     localStorage.setItem("DB", JSON.stringify(DB))
-
     //////////\\\\\\\\\\\\//////////\\\\\\\\\\////////\\\\\\
+
 
 
     //reseta o botão, o forms e a data
